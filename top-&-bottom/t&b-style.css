@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* top styling */
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(214, 189, 189);
+    background-color: rgb(123, 93, 93);
+    background-color: rgb(193, 132, 127);
+}
+
+#logo {
+    width: 8.2vw;
+}
+
+.top_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: flex-start;; 
+}
+
+.top_text {
+    color: white;
+    font-size: 1.4em;
+}
+
+
+/* bottom styling */
+
+.bottom {
+    background-color: rgb(193, 132, 127);
+    background-color: rgb(123, 93, 93);
+    background-color: rgb(214, 189, 189);
+    background-color: rgba(141, 62, 40, 0.926);
+
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.icon {
+    width: 2vw;
+    height: 4vh;
+    
+
+}
+
+.icon:hover {
+    transform: scale(1.2); 
+    background-color: rgb(249, 238, 232);
+    background-color: rgb(249, 238, 232);
+
+    border-radius: 10px;
+}

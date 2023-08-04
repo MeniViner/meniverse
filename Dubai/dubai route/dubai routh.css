@@ -1,0 +1,27 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  margin-bottom: 5px;
+}
+
+.day-schedule {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+}
+
+.day-button {
+  display: block;
+  width: 29vw;
+  /* border-radius: 15%; */
+}
+
