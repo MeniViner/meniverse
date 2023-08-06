@@ -3,6 +3,7 @@ body, html {
     padding: 0;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -18,6 +19,8 @@ a {
     background-color: rgb(214, 189, 189);
     background-color: rgb(123, 93, 93);
     background-color: rgb(193, 132, 127);
+    background-color: rgba(141, 62, 40, 0.926);
+
 }
 
 #logo {
@@ -66,7 +69,15 @@ a {
 .icon:hover {
     transform: scale(1.2); 
     background-color: rgb(249, 238, 232);
-    background-color: rgb(249, 238, 232);
-
     border-radius: 10px;
+}
+
+hr {
+    color: 
+}
+
+.site-info {
+    text-align: center;
+    color: rgb(249, 238, 232);
+    ;
 }

@@ -4,9 +4,7 @@ body, html {
 }
 
 body {
-    /* background-color: rgba(245, 245, 220, 0.73);  */
     background-color: rgb(249, 238, 232);
-    /* background-color: aqua; */
 }
 
 a {
@@ -37,7 +35,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 66vh;
-    color: rgba(141, 62, 40, 0.926);
+    color: rgb(193, 132, 127);
     font-size: 2.4em;
 
 }
@@ -62,5 +60,9 @@ a {
 
 #select-country {
     font-size: 2.6em;
+    text-align: center;
+    color:  rgb(193, 132, 127);
+    color: rgba(141, 62, 40, 0.926);
+
 }
 
