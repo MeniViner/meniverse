@@ -6,13 +6,11 @@ body, html {
 body {
     background-color: rgb(249, 238, 232);
     font-family: 'Varela Round', sans-serif;
-    
 }
 
 a {
     text-decoration: none;
 }
-
 
 /* top styling */
 
@@ -21,11 +19,7 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    background-color: rgb(214, 189, 189);
-    background-color: rgb(123, 93, 93);
-    background-color: rgb(193, 132, 127);
     background-color: rgba(141, 62, 40, 0.926);
-
 }
 
 #logo {
@@ -36,7 +30,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 80px;
-    justify-content: flex-start;; 
+    justify-content: flex-start;
 }
 
 .top_text {
@@ -46,19 +40,21 @@ a {
 
 .top_text:hover {
     transform: scale(1.05); 
-    /* background-color: rgb(249, 238, 232); */
     border-radius: 10px;
 }
 
+/* Media Query for Responsive Design - Adjust Menu Items Gap for Small Screens */
+
+@media (max-width: 767px) {
+    .top_menu {
+        gap: 40px; /* Reduce the gap between menu items for smaller screens */
+    }
+}
 
 /* bottom styling */
 
 .bottom {
-    background-color: rgb(193, 132, 127);
-    background-color: rgb(123, 93, 93);
-    background-color: rgb(214, 189, 189);
     background-color: rgba(141, 62, 40, 0.926);
-
 }
 
 .icons {
@@ -67,13 +63,11 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
 }
 
 .icon {
     width: 2vw;
     height: 4vh;
-    
 }
 
 .icon:hover {
@@ -85,5 +79,101 @@ a {
 .site-info {
     text-align: center;
     color: rgb(249, 238, 232);
-    ;
 }
+
+
+/* t&b-style.css */
+
+/* Rest of the CSS rules above... */
+
+/* Media Query for Responsive Design - Adjust Menu Items Gap for Small Screens */
+@media (max-width: 767px) {
+    .top_menu {
+        gap: 40px; /* Reduce the gap between menu items for smaller screens */
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Icon Size for Small Screens */
+@media (max-width: 767px) {
+    .icon {
+        width: 4vw;
+        height: 4vh;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Bottom Padding for Small Screens */
+@media (max-width: 767px) {
+    .bottom {
+        padding: 20px 0;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Site Info Font Size for Small Screens */
+@media (max-width: 767px) {
+    .site-info {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Font Size of Top Menu Text for Small Screens */
+@media (max-width: 767px) {
+    .top_text {
+        font-size: 1em;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Logo Size for Small Screens */
+@media (max-width: 767px) {
+    #logo {
+        width: 15vw;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Padding of Top Bar for Small Screens */
+@media (max-width: 767px) {
+    .top {
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Gap Between Top Menu and Logo for Small Screens */
+@media (max-width: 767px) {
+    .top_menu {
+        gap: 20px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Top Bar Height for Small Screens */
+@media (max-width: 767px) {
+    .top {
+        height: 60px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Font Size of Bottom Icons for Small Screens */
+@media (max-width: 767px) {
+    .icons {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Gap Between Icon and Site Info for Small Screens */
+@media (max-width: 767px) {
+    .icons {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .icons {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Responsive Design - Adjust Gap Between Icon and Site Info for Small Screens */
+@media (max-width: 767px) {
+    .icons {
+        gap: 5px;
+    }
+}
+

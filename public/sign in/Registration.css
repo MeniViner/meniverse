@@ -1,3 +1,5 @@
+/* registration.css */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,4 +8,123 @@ body, html {
 body {
     background-color: rgb(249, 238, 232);
     font-family: 'Varela Round', sans-serif;
+}
+
+/* Styles for Form Elements */
+label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(141, 62, 40);
+    font-size: 18px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(193, 132, 127);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(193, 132, 127, 0.8);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    input[type="date"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 90%;
+    }
+
+    button[type="submit"] {
+        width: 90%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    input[type="date"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 70%;
+    }
+
+    button[type="submit"] {
+        width: 70%;
+    }
+}
+
+/* Desktops and Larger Screens */
+@media (min-width: 1024px) {
+    input[type="date"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 50%;
+    }
+
+    button[type="submit"] {
+        width: 50%;
+    }
+}
+
+/* Additional Styles for Form and Title */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+h1 {
+    color: rgb(141, 62, 40);
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Additional Styles for Labels and Buttons */
+label {
+    font-size: 20px;
+}
+
+button[type="submit"] {
+    font-size: 20px;
 }
