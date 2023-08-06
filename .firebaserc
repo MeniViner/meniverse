@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "meniverse-tours"
-  }
+    "default": "meniverse-tour",
+    "staging": "meniverse-tour"
+  },
+  "targets": {},
+  "etags": {}
 }
