@@ -67,3 +67,77 @@ a {
 
 }
 
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .pics {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .pic {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .country_name {
+        flex-direction: column;
+        gap: 2vh;
+        font-size: 2em;
+    }
+
+    #edd {
+        font-size: 3em;
+    }
+
+    #site-description {
+        font-size: 1.2em;
+    }
+
+    #start-bt {
+        font-size: 1.2em;
+    }
+
+    #select-country {
+        font-size: 1.8em;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .pics {
+        gap: 10vh;
+    }
+
+    .pic {
+        width: 45vw;
+        height: 30vh;
+    }
+
+    .country_name {
+        gap: 10vh;
+        font-size: 2.2em;
+    }
+
+    #edd {
+        font-size: 4.5em;
+    }
+
+    #site-description {
+        font-size: 1.4em;
+    }
+
+    #start-bt {
+        font-size: 1.5em;
+    }
+
+    #select-country {
+        font-size: 2.2em;
+    }
+}
+
+/* Desktops and Larger Screens */
+@media (min-width: 1024px) {
+    /* Your default styles for desktops go here (already provided in the original CSS) */
+}

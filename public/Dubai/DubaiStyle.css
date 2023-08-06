@@ -154,29 +154,71 @@ h1, h4 {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 400px;
-  }
-  
-  .column {
-    flex: 0 0 33.33%;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    width: 280px;
-  }
-  
-  .column {
-    flex: 0 0 50%;
-  }
-}
-
 iframe {
   border-radius: 15px; 
 }
 
 
 
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .info-box {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .wellcome-text {
+    font-size: 40px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .numbertext {
+    font-size: 10px;
+  }
+
+  .caption-container {
+    padding: 5px;
+  }
+
+  .demo {
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  .guide_text {
+    font-size: 24px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 70%;
+  }
+
+  iframe {
+    width: 70%;
+    height: 400px;
+  }
+}
+
+/* Desktops and Larger Screens */
+@media (min-width: 1024px) {
+  /* Your default styles for desktops go here (already provided in the original CSS) */
+}

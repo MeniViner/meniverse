@@ -2,27 +2,155 @@ body, html {
   margin: 0;
   padding: 0;
 }
-  
+
 body {
   background-color: rgb(249, 238, 232);
   font-family: 'Varela Round', sans-serif;
-  
 }
 
 h1, h2 {
   margin-bottom: 5px;
 }
 
+/* Schedule Styles */
 .day-schedule {
   display: none;
   padding: 10px;
   border: 1px solid #ccc;
   background-color: #f9f9f9;
   margin-top: 5px;
+  border-radius: 5px;
 }
 
 .day-button {
   display: block;
   width: 9vw;
+  padding: 10px;
+  background-color: rgb(193, 132, 127);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
 }
 
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .day-button {
+    width: 30vw;
+  }
+
+  .day-schedule {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .day-button {
+    width: 15vw;
+  }
+}
+
+/* Desktops and Larger Screens */
+@media (min-width: 1024px) {
+  .day-button {
+    width: 9vw;
+  }
+
+  .day-schedule {
+    width: 40%;
+  }
+}
+
+/* Additional Styles for a Beautiful Design */
+h1 {
+  color: rgb(141, 62, 40);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+h2 {
+  color: rgb(141, 62, 40);
+  text-align: center;
+  font-size: 24px;
+}
+
+#DatesToShow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.available-date {
+  background-color: rgb(193, 132, 127);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.available-date:hover {
+  background-color: rgba(193, 132, 127, 0.8);
+}
+
+/* Additional Styles for Itinerary */
+.itinerary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* Schedule Day Buttons */
+.day-button {
+  font-size: 18px;
+}
+
+/* Schedule Day Details */
+.day-schedule h2 {
+  font-size: 24px;
+  color: rgb(193, 132, 127);
+  margin-bottom: 10px;
+}
+
+.day-schedule p {
+  font-size: 16px;
+  color: rgb(141, 62, 40);
+  margin: 5px 0;
+}
+
+/* Itinerary Title */
+h1 {
+  font-size: 40px;
+}
+
+/* Media Query for Schedule Details on Mobile Devices */
+@media (max-width: 767px) {
+  .day-schedule {
+    width: 90%;
+  }
+}
+
+/* Media Query for Schedule Details on Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .day-schedule {
+    width: 70%;
+  }
+}
+
+/* Media Query for Schedule Details on Desktops */
+@media (min-width: 1024px) {
+  .day-schedule {
+    width: 40%;
+  }
+}
