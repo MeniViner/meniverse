@@ -44,6 +44,12 @@ a {
     font-size: 1.4em;
 }
 
+.top_text:hover {
+    transform: scale(1.05); 
+    /* background-color: rgb(249, 238, 232); */
+    border-radius: 10px;
+}
+
 
 /* bottom styling */
 
