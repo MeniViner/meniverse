@@ -55,7 +55,7 @@ h1, h4 {
   display: none;
 }
 
-.prev,  .next {
+.prev, .next {
   position: absolute;
   top: 50%;
   width: 40px;
@@ -141,26 +141,6 @@ h1, h4 {
 
 .demo:hover {
   opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 400px;
-  }
-  
-  .column {
-    flex: 0 0 33.33%;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    width: 280px;
-  }
-  
-  .column {
-    flex: 0 0 50%;
-  }
 }
 
 iframe {
