@@ -4,7 +4,8 @@ body, html {
 }
   
 body {
-  font-family: Arial, sans-serif;
+  background-color: rgb(249, 238, 232);
+  font-family: 'Varela Round', sans-serif;
 }
 
 h1, h2 {
@@ -16,7 +17,6 @@ h1, h2 {
   padding: 10px;
   border: 1px solid #76716b;
   background-color:  #f0ece1;
-  /* border-radius: 9px; */
   margin-top: 5px;
 }
 

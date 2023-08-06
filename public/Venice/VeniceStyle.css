@@ -4,23 +4,12 @@ body, html {
 }
 
 body {
-  background-color: rgba(245, 245, 220, 0.73);
+  background-color: rgb(249, 238, 232);
   font-family: 'Varela Round', sans-serif;
-  font-size: 18px;
   background-image: url('venice pics/Venice-4k-opacity.png'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#logo {
-  width: 12vw;
-  height: 15vh;
-}
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .welcome {
@@ -40,9 +29,9 @@ body {
   margin: 0 auto;
 }
 
-/* p {
+span {
   color: rgba(141, 62, 40, 0.926);
-} */
+}
 
 .guide_text {
   color: rgb(123, 93, 93);

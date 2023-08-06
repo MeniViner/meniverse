@@ -1,4 +1,3 @@
-// cityScript.js
 const images = [
   { src: 'dubai pics/dubai1.jpeg', caption: 'Dubai’s stunning skyline at sunset, with a beautiful marina and towering skyscrapers.' },
   { src: 'dubai pics/dubai2.jpg', caption: 'City skyline with modern glass buildings, reflected in bright blue water.' },

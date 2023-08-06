@@ -1,5 +1,3 @@
-// בקובץ זה נעזרתי בבינה מלאכותית
-
 const images = [
     { src: 'venice pics/Venice1.jpg', caption: 'A sunset over the Grand Canal.' },
     { src: 'venice pics/Venice2.jpg', caption: 'a beautiful sunset over a canal' },
@@ -11,7 +9,6 @@ const images = [
     { src: 'venice pics/Venice8.jpg', caption: 'The Venetian lagoon from a pier, with the island of San Giorgio Maggiore' },
     { src: 'venice pics/Venice9.jpg', caption: 'This is a photo of a Venetian style canal with gondolas in a shopping mall.' },
     { src: 'venice pics/Venice10.jpg', caption: 'The Rialto Bridge, spanning the Grand Canal and lined with shops and restaurants.' }
-
   ];
   
   let currentSlideIndex = 0;
