@@ -18,29 +18,28 @@ a {
 
 #edd {
     font-size: 5.2em;
-    color: #f9eee8;
+    color:white;
     text-shadow: 1px 1px 2px #00000080;
 }
 
 #site-description {
     font-size: 1.6em;
-    color: #f9eee8;
+    color:white;
     text-shadow: 1px 1px 10px #00000080;
 }
 
 #start-bt {
-    background-color: #f9eee8;
-    color: #c1847f;
+    color: #f9eee8;
+    background-color: #5d5d5dc9;
     border-radius: 20px;
-    color: #c1847f;
     border: none;
     width: 300px;
 }
     
 #start-bt:hover {
+    color: #c1847f;
+    background-color: #f9eee8;
     transform: scale(1.001);
-    color: #f9eee8;
-    background-color: #5d5d5dc9;
     box-shadow: 0 0 10px #00000080;
     border: 1px solid black;
 
