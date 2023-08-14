@@ -1,9 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-}
-
-body {
     background-color: rgb(249, 238, 232);
     font-family: 'Varela Round', sans-serif;
 }
@@ -12,14 +9,12 @@ a {
     text-decoration: none;
 }
 
-/* top styling */
-
 .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
     background-color: rgba(141, 62, 40, 0.926);
+    padding: 10px 20px;
 }
 
 #logo {
@@ -28,14 +23,14 @@ a {
 
 .top_menu {
     display: flex;
-    flex-direction: row;
     gap: 80px;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .top_text {
-    color: white;
+    color: rgb(249, 238, 232);
     font-size: 1.4em;
+    transition: transform 0.2s, border-radius 0.2s;
 }
 
 .top_text:hover {
@@ -43,15 +38,80 @@ a {
     border-radius: 10px;
 }
 
-/* Media Query for Responsive Design - Adjust Menu Items Gap for Small Screens */
 
-@media (max-width: 767px) {
-    .top_menu {
-        gap: 40px; /* Reduce the gap between menu items for smaller screens */
+
+/* Media Query for Desktop View - Hide Navigation Menu */
+@media (min-width: 768px) {
+    .side_menu {
+        display: none;
     }
 }
 
-/* bottom styling */
+@media (max-width: 767px) {
+    .top_menu, .logo {
+        display: none; 
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #f9eee8;
+        margin: 5px 0;
+    }
+
+    .side_menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(141, 62, 40, 0.926);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .side_menu a.side_text {
+        text-decoration: none; 
+        color: #f9eee8; 
+    }
+
+    .side_menu a.side_text:not(:first-child) {
+        border-top: 1px solid #f9eee8; 
+        padding-top: 10px; 
+    }
+
+    .side-menu-open {
+        left: 0; 
+        z-index: 1000;
+    }
+    
+    .side-menu-open .mobile-menu-icon {
+        display: none;
+    }
+
+    .side-menu-open .close-button {
+        color: #f9eee8;
+        font-size: 1.5em;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+}
+
+
 
 .bottom {
     background-color: rgba(141, 62, 40, 0.926);
@@ -72,108 +132,11 @@ a {
 
 .icon:hover {
     transform: scale(1.2); 
-    background-color: rgb(249, 238, 232);
+    background-color: #f9eee8;
     border-radius: 10px;
 }
 
 .site-info {
     text-align: center;
-    color: rgb(249, 238, 232);
+    color: #f9eee8;
 }
-
-
-/* t&b-style.css */
-
-/* Rest of the CSS rules above... */
-
-/* Media Query for Responsive Design - Adjust Menu Items Gap for Small Screens */
-@media (max-width: 767px) {
-    .top_menu {
-        gap: 40px; /* Reduce the gap between menu items for smaller screens */
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Icon Size for Small Screens */
-@media (max-width: 767px) {
-    .icon {
-        width: 4vw;
-        height: 4vh;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Bottom Padding for Small Screens */
-@media (max-width: 767px) {
-    .bottom {
-        padding: 20px 0;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Site Info Font Size for Small Screens */
-@media (max-width: 767px) {
-    .site-info {
-        font-size: 14px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Font Size of Top Menu Text for Small Screens */
-@media (max-width: 767px) {
-    .top_text {
-        font-size: 1em;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Logo Size for Small Screens */
-@media (max-width: 767px) {
-    #logo {
-        width: 15vw;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Padding of Top Bar for Small Screens */
-@media (max-width: 767px) {
-    .top {
-        padding: 10px 20px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Gap Between Top Menu and Logo for Small Screens */
-@media (max-width: 767px) {
-    .top_menu {
-        gap: 20px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Top Bar Height for Small Screens */
-@media (max-width: 767px) {
-    .top {
-        height: 60px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Font Size of Bottom Icons for Small Screens */
-@media (max-width: 767px) {
-    .icons {
-        font-size: 14px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Gap Between Icon and Site Info for Small Screens */
-@media (max-width: 767px) {
-    .icons {
-        gap: 5px;
-    }
-}
-
-@media (max-width: 767px) {
-    .icons {
-        font-size: 14px;
-    }
-}
-
-/* Media Query for Responsive Design - Adjust Gap Between Icon and Site Info for Small Screens */
-@media (max-width: 767px) {
-    .icons {
-        gap: 5px;
-    }
-}
-

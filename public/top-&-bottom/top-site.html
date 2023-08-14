@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t&b-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!--  x button  -->
 </head>
 <body>
     
     <header class="top">
-        <a href="../../index.html">
+
+        <div class="mobile-menu-icon" onclick="toggleSideMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <a class="logo" href="/images/Logo v1.0.png">
             <img id="logo" src="/images/Logo v1.0.png">
         </a>
+
         <nav class="top_menu">
-            <a href = "../../index.html">
-                <h3 class="top_text">Home</h3>
-            </a>
 
-            <a href = "/Dubai/Dubai.html">
-                <h3 class="top_text">Dubai</h3>
-            </a>
-
-            <a href = "/Venice/Venice.html">
-                <h3 class="top_text">Venice</h3>
-            </a>
-
-            <a href = "/sign in/Registration.html">
-                <h3 class="top_text">Sign-in</h3>
-            </a>
-
-
+            <a href="../../index.html" class="top_text">Home</a>
+            <a href="/Dubai/Dubai.html" class="top_text">Dubai</a>
+            <a href="/Venice/Venice.html" class="top_text">Venice</a>
+            <a href="/sign in/Registration.html" class="top_text">Sign-in</a>
         </nav>
     </header>
 
+    <nav class="side_menu">
+
+        <a class="close-button" onclick="toggleSideMenu()">
+            <i class="fas fa-times"></i>
+        </a>        
+
+        <a href="/images/Logo v1.0.png">
+            <img id="logo" src="/images/Logo v1.0.png">
+        </a>
+
+        <a href="../../index.html" class="side_text">Home</a>
+        <a href="/Dubai/Dubai.html" class="side_text">Dubai</a>
+        <a href="/Venice/Venice.html" class="side_text">Venice</a>
+        <a href="/sign in/Registration.html" class="side_text">Sign-in</a>
+
+    </nav>
+
+    <script src="t&b-attach.js"></script>
 </body>
 </html>

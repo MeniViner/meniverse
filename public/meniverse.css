@@ -27,7 +27,7 @@ a {
 }
 
 .pic:hover {
-    transform: scale(1.1); 
+    transform: scale(1.05); 
 }
 
 .country_name {
@@ -51,11 +51,16 @@ a {
 }
 #start-bt {
     border-radius: 20px;
-    background-color: rgb(249, 238, 232);
-    color: rgb(193, 132, 127);
+    color: rgb(249, 238, 232);
+    background-color: rgba(155, 151, 149, 0.771);
+    border: none;
 }
+    
 #start-bt:hover {
     transform: scale(1.001); 
+    background-color: rgb(249, 238, 232);
+    color: rgb(193, 132, 127);
+
 }    
 
 

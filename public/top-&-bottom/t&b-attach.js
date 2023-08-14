@@ -20,3 +20,16 @@ $(document).ready(function() {
         $("#bottom-section").load("../top-&-bottom/bottom-site.html");
     }
 });
+
+
+
+function toggleSideMenu() {
+    const sideMenu = document.querySelector('.side_menu');
+
+    if (sideMenu.classList.contains('side-menu-open')) {
+        sideMenu.classList.remove('side-menu-open');
+    } else {
+        sideMenu.classList.add('side-menu-open');
+    }
+}
+
