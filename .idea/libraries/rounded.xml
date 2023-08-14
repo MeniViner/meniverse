@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rounded">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/public/images/rounded.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -190,3 +190,17 @@ body {
     font-size: 25px;
     text-align: center;
 }
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    #both-dates {
+        flex-direction: column;
+    }
+
+    .check-notice,
+    .check-container,
+    .available,
+    .login-container {
+        width: 300px;
+    }
+}
