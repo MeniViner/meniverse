@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venice itinerary</title>
-    <link rel="stylesheet" href="venice routh.css"> 
+    <link rel="stylesheet" href="/route.css"> 
 
     <link rel="icon" type="image/x-icon" href="/images/menivers.png">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+
     <link rel="stylesheet" href="/top-&-bottom/t&b-style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- // top&Bottom -->
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="top-section"></div>    
-
-    <h1>Venice Itinerary</h1>
+    <div id="top-section"></div>  
+    
+    <div class="top-route">
+        <div id="top-text">
+            <h2>Venice Itinerary</h2>
+            <img src="/images/icons/schedule.png">
+        </div>
+    
+        <div class="info-tour">
+            <h3>This is our special group route.</h3>
+            <h3>Available days can be found on the <a href="/book/Registration.html">book page</a>.</h3>
+        </div>
+    </div>
 
     <div class="itinerary">
         <button class="day-button">Sunday</button>
@@ -83,13 +93,15 @@
         </div>
     </div>
 
-    <h2>available Dates to this trip:</h2>
-    <div id="DatesToShow"></div>
+    <br><br><br><br>
+    <a href="/book/Registration.html">
+        <button id="book-bt">book your trip now</button>
+    </a>
 
-    <script src="venice route.js"></script>
-
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
     <div id="bottom-section"></div>
-    <script src="/top-&-bottom/t&b-attach.js"></script>
+    <script src="../../top-&-bottom/t&b-attach.js"></script>
+
+    <script src="/route.js"></script>
 </body>  
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+
+    <link rel="icon" type="image/x-icon" href="../images/meniverse-icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../top-&-bottom/t&b-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="top-section"></div>
+    <br>
+    <div class="top-dates">
+        <h1 id="date-text">select your dates</h1>
+        <br><br>
+        <div id="both-dates">
+            <div id="both-check">
+                <div class="check-notice">
+                    <img src="/images/icons/attention.png">
+                    <h3>Consider checking our full trip before selecting dates</h3>
+                </div>
+                <div class="check-container">
+                    <p>Check-In Date:</p>
+                    <input type="date" name="checkin" class="check-in-&-out" min="2023-08-01" required>
+                    <p>Check-Out Date:</p>
+                    <input type="date" name="checkout" class="check-in-&-out" min="2023-08-02" required>    
+                </div>
+            </div>
+            <div class="available"> 
+                <h1>Book our full tour! <br>Available dates this month</h1>
+                <div class="available-dates">
+                    <div id="available-dates"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <br><br><br><br>
+    <div id="info-text">
+        <h1>enter your personal info</h1>
+    </div>
+
+    <br>
+    <div class="login-container">
+        <h1 id="Your-info">Your info</h1>
+        <h1 id="success">Your order has been received!</h1>
+        <form class="form">
+            <input type="text" placeholder="Full name" name="username" required>
+            <input type="email" placeholder="email" name="email" required>
+            <input type="tel" placeholder="phone" name="phone" required>
+
+            <input type="text" placeholder="notes" name="notes"><br>
+
+            <button type="submit" name="submit" id="send">Submit</button>
+        </form>
+
+        <div class="cost">
+            <p id="cost-text"></p>
+            <span id="total-cost"></span>
+        </div>
+
+        <div class="success-message">
+            <h1>Hope you enjoy your trip.</h1>
+        </div>
+    </div>
+    
+    
+    <br><br><br><br><br><br>
+    <div id="bottom-section"></div>
+    <script src="/top-&-bottom/t&b-attach.js"></script>
+    <script src="Registration.js"></script>
+
+</body>
+</html>

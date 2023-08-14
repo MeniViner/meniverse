@@ -17,6 +17,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0.5, 0.5); 
+}
+
+#wellcome-text {
+  color: rgb(123, 93, 93);
+  font-size: 42px;
+  text-shadow: rgb(245, 236, 204) 1px 0 10px;
 }
 
 .info-box {
@@ -25,27 +32,36 @@ body {
   padding: 20px; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
   text-align: center; 
-  max-width: 600px; 
+  max-width: 750px; 
   margin: 0 auto;
 }
 
-span {
-  color: rgba(141, 62, 40, 0.926);
-}
+.info-box p {
+  font-size: larger;
+  color: rgb(123, 93, 93);
+} 
 
 .guide_text {
   color: rgb(123, 93, 93);
+  text-shadow: #ff5900 1px 0 1px;
 }
 
 h1, h4 {
   margin: 20px 0;
 }
 
+.st {
+  color: #000; 
+}
+
+.wellcome-text {
+  font-size: 50px;
+}
+
 .container {
   position: relative;
   border-radius: 10px;
-  width: 600px;
-  max-width: 90%;
+  width: 850px;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -145,4 +161,90 @@ h1, h4 {
 
 iframe {
   border-radius: 15px; 
+}
+
+#Navigate-bt {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border-radius: 1.3em;
+  width: fit-content;
+  margin: auto;
+  padding: 0.2%; 
+  color: rgb(158, 108, 104);
+  background-color: transparent;
+  border: none;
+  text-shadow: 1px 1px 2px rgb(255, 119, 119), 0 0 1em #F9EEE8, 0 0 0.2em #F9EEE8;
+}
+
+#Navigate-bt :hover{
+  transform: scale(1.005); 
+  text-decoration: underline;
+}
+
+#groupe-route {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(0, 0, 0, 0.5); 
+}
+
+#g-r-text {
+  color: rgb(158, 108, 104);
+  text-shadow: 1px 1px 2px #F9EEE8, 0 0 1em #F9EEE8, 0 0 0.2em #F9EEE8;
+}
+
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .info-box {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .wellcome-text {
+    font-size: 40px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .prev,
+  .next {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .numbertext {
+    font-size: 10px;
+  }
+
+  .caption-container {
+    padding: 5px;
+  }
+
+  .demo {
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  .guide-text {
+    font-size: 24px;
+    text-shadow: #F9EEE8 1px 0 10px;
+
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 70%;
+  }
+
+  iframe {
+    width: 70%;
+    height: 400px;
+  }
 }

@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    box-shadow: 0 60px 60px -40px rgba(0,0,0,0.5);
 }
 
 .video-background {
@@ -44,42 +45,17 @@
     height: 100%;
 }
 
-.video-background::before {
-    content: "";
-    position: absolute;
-    bottom: -100px; 
-    left: 0;
-    width: 100%;
-    height: 200px; 
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.3) 100%);
-    background-size: 200% 100%;
-    animation: wave 2s linear infinite;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0); 
-}
-
-@keyframes wave {
-    0% {
-        background-position: 0 50%;
+@media (max-width: 767px) {
+    .video-container {
+        margin: 0 auto;
+        position: relative;
+        width: 389;
+        height: 200px; 
     }
-    100% {
-        background-position: 100% 50%;
+
+    .content {
+        margin-left: 5%;
+        width: auto;
+        height: auto;
     }
 }
-
-.video-container:hover .video-background::before {
-    animation: wave 2s linear infinite;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

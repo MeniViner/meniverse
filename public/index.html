@@ -11,53 +11,51 @@
     <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
 
     <link rel="stylesheet" href="../top-&-bottom/t&b-style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- // top&Bottom -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- // With this js i can insert the top&Bottom.html to every site. -->
 </head>
 <body>
     <div id="top-section"></div>
 
     <div class="video-container">
-        
         <div class="video-background">
             <div class="video-wrap">
-                <iframe id="youtube-iframe" src="https://www.youtube.com/embed/qBksp9FS3Sc?autoplay=1&controls=0&modestbranding=1&mute=1&enablejsapi=1&widgetid=1" frameborder="0" allowfullscreen></iframe>
+                <iframe id="youtube-iframe" src="https://www.youtube.com/embed/qBksp9FS3Sc?autoplay=1&controls=0&modestbranding=1&mute=1&enablejsapi=1&widgetid=1" frameborder="0" controls="0" modestbranding="1" allowfullscreen></iframe>
             </div>
         </div>
 
         <div class="content">
-            <h1 id="Welcome-message">welcome to menivers🌍 tours</h1>
+            <h1 id="Welcome-message">Welcome to menivers🌍 tour.</h1>
             <h1 id="edd">Explore. Dream. Discover.</h1>
-            <p id="site-description">this is a travel site, here you can chuse your next trip</p>
-            <a href="#select-country">
+            <p id="site-description">In this travel site, you can plan your next vacation.</p>
+            <a href="#scroll-bt">
                 <button id="start-bt"><h1>START EXPLORING</h1></button>
             </a>
         </div>
-
     </div>
 
-    <h5 id="after"></h5>
+    <h5 id="scroll-bt"></h5>
 
-    <br><br><br><br><br><br>
-    <h3 id="select-country"><u>choose your destiny:</u></h3>
+    <br><br><br><br><br>
+    <h3 id="select-country">Choose your destination</h3><br><br>
     
     <div class="pics">
-
         <a href="/Dubai/Dubai.html">
             <img class="pic" src="../Dubai/dubai pics/dubai1.jpeg">
+            <h2 class="name-phone-only">Dubai</h2>
+
         </a>
         <a href="/Venice/Venice.html">
             <img class="pic" src="../Venice/venice pics/Venice1.jpg">
+            <h2 class="name-phone-only">Venice</h2>
         </a>
-
     </div>
     
-    <div class="country_name">
-        <h2>Dubai</h2>
-        <h2>Venice</h2>
+    <div class="country-name">
+        <h2 id="dubai-name">Dubai</h2>
+        <h2 id="venice-name">Venice</h2>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <div id="bottom-section"></div>
     <script src="/top-&-bottom/t&b-attach.js"></script>
 

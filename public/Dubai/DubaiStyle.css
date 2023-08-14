@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-  background-color: rgb(249, 238, 232);
+  background-color: #F9EEE8;
   font-family: 'Varela Round', sans-serif;
   background-image: url('/Dubai/dubai pics/dubai-4k-opacity.png'); 
   background-repeat: no-repeat;
@@ -17,6 +17,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0.5, 0.5); 
+}
+
+#wellcome-text {
+  color: rgb(123, 93, 93);
+  font-size: 42px;
+  text-shadow: rgb(245, 236, 204) 1px 0 10px;
 }
 
 .info-box {
@@ -25,16 +32,19 @@ body {
   padding: 20px; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
   text-align: center; 
-  max-width: 600px; 
+  max-width: 750px; 
+  height: 150px;
   margin: 0 auto;
 }
 
-span {
-  color: rgba(141, 62, 40, 0.926);
-} 
-
-.guide_text, span {
+.info-box p {
+  font-size: larger;
   color: rgb(123, 93, 93);
+}
+
+.guide-text {
+  color: rgb(123, 93, 93);
+  text-shadow: #ff5900 1px 0 1px;
 }
 
 h1, h4 {
@@ -53,8 +63,7 @@ h1, h4 {
 .container {
   position: relative;
   border-radius: 10px;
-  width: 600px;
-  max-width: 90%;
+  width: 850px;
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -64,8 +73,7 @@ h1, h4 {
   display: none;
 }
 
-.prev,
-.next {
+.prev, .next {
   position: absolute;
   top: 50%;
   width: 40px;
@@ -158,9 +166,33 @@ iframe {
   border-radius: 15px; 
 }
 
+#Navigate-bt {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border-radius: 1.3em;
+  width: fit-content;
+  margin: auto;
+  padding: 0.2%; 
+  color: rgb(158, 108, 104);
+  background-color: transparent;
+  border: none;
+  text-shadow: 1px 1px 2px rgb(255, 119, 119), 0 0 1em #F9EEE8, 0 0 0.2em #F9EEE8;
+}
 
+#Navigate-bt :hover{
+  transform: scale(1.005); 
+  text-decoration: underline;
+}
 
-/* Media Queries for Responsive Design */
+#groupe-route {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border: 1px solid rgba(0, 0, 0, 0.5); 
+}
+
+#g-r-text {
+  color: rgb(158, 108, 104);
+  text-shadow: 1px 1px 2px #F9EEE8, 0 0 1em #F9EEE8, 0 0 0.2em #F9EEE8;
+}
+
 
 /* Mobile Devices */
 @media (max-width: 767px) {
@@ -201,9 +233,12 @@ iframe {
     height: 300px;
   }
 
-  .guide_text {
+  .guide-text {
     font-size: 24px;
+    text-shadow: #F9EEE8 1px 0 10px;
   }
+
+
 }
 
 /* Tablets */
@@ -216,9 +251,4 @@ iframe {
     width: 70%;
     height: 400px;
   }
-}
-
-/* Desktops and Larger Screens */
-@media (min-width: 1024px) {
-  /* Your default styles for desktops go here (already provided in the original CSS) */
 }

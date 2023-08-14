@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="t&b-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!--  x button  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
     <header class="top">
 
         <div class="mobile-menu-icon" onclick="toggleSideMenu()">
@@ -16,8 +15,14 @@
             <div class="bar"></div>
         </div>
 
-        <a class="logo" href="/images/Logo v1.0.png">
-            <img id="logo" src="/images/Logo v1.0.png">
+        <a class="logo" href="/index.html">
+            <img id="logo" src="/images/Logo-v2.png">
+        </a>
+
+        <h2 id="mobile-site-name">MeniVerse tour</h2>
+
+        <a class="mobile-logo" href="/index.html">
+            <img id="mobile-logo" src="/images/meniverse-icon.png">
         </a>
 
         <nav class="top_menu">
@@ -25,7 +30,16 @@
             <a href="../../index.html" class="top_text">Home</a>
             <a href="/Dubai/Dubai.html" class="top_text">Dubai</a>
             <a href="/Venice/Venice.html" class="top_text">Venice</a>
-            <a href="/sign in/Registration.html" class="top_text">Sign-in</a>
+
+            <a href="javascript:void(0);" onclick="toggleRouteMenu()">
+                <div id="route-text" class="top_text">Route</div>
+            </a>
+            <div class="menu-route" id="menu-route">
+                <a href="/Dubai/dubai route/dubai route.html" class="route-text">Dubai-route</a>
+                <a href="/Venice/venice route/venice route.html" class="route-text">Venice-route</a>
+            </div>
+
+            <a href="/book/Registration.html" class="top_text">Book now</a>
         </nav>
     </header>
 
@@ -35,17 +49,14 @@
             <i class="fas fa-times"></i>
         </a>        
 
-        <a href="/images/Logo v1.0.png">
-            <img id="logo" src="/images/Logo v1.0.png">
-        </a>
-
+        <h8></h8>
         <a href="../../index.html" class="side_text">Home</a>
         <a href="/Dubai/Dubai.html" class="side_text">Dubai</a>
         <a href="/Venice/Venice.html" class="side_text">Venice</a>
-        <a href="/sign in/Registration.html" class="side_text">Sign-in</a>
+        <a href="/book/Registration.html" class="side_text">Book now</a>
 
     </nav>
-
+    
     <script src="t&b-attach.js"></script>
 </body>
 </html>

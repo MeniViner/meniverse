@@ -1,0 +1,230 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(249, 238, 232);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.top-route {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 122px;
+}
+  
+#top-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    width: 30%;
+}
+  
+.top-route img {
+    width: 76.80px;
+    height: 76.80px;
+}
+
+.info-tour {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    max-width: 400px;
+    height: 200px; 
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.info-tour a{
+    color: #ac604b;
+}
+
+.info-tour a:hover{
+    color: #8d3e28;
+    text-decoration: underline;
+}
+  
+.itinerary h2,
+.top-route h3 {
+    text-align: center;
+    color: #ac604b;
+    font-size: 25px;
+}
+
+
+#top-text h2 {
+    margin-bottom: 5px;
+    color: #8d3e28;
+    text-align: center;
+    font-size: 40px;
+}
+  
+.itinerary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+  
+.day-schedule {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); 
+}
+  
+.day-button {
+    display: block;
+    width: 9vw;
+    padding: 10px;
+    background-color: rgb(193, 132, 127);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 18px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3); 
+  
+}
+  
+.day-button:hover { 
+    background-color: rgb(178, 145, 143);
+    width: 9.1vw;
+}
+  
+.day-schedule h2 {
+    font-size: 24px;
+    color: rgb(193, 132, 127);
+    margin-bottom: 10px;
+}
+  
+.day-schedule p {
+    font-size: 16px;
+    color: rgb(141, 62, 40);
+    margin: 5px 0;
+}
+  
+  
+.available-dates {
+    background-color: rgba(141, 62, 40, 0.587);
+    max-width: 150px; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    color: #f9eee8;
+}
+  
+.top-text h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+  
+.available-dates p {
+    font-size: 1.2em;
+    margin: 5px;
+}
+  
+#book-bt {
+    font-size: 27px ;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); 
+    animation: pulsate 3s infinite;
+    transition: transform 0.5s;
+    background-color: rgb(249, 245, 242);
+    color: rgb(193, 132, 127);
+}
+  
+#book-bt:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 11px;
+    background-color: rgb(206, 202, 201);
+}
+  
+@keyframes pulsate  {
+    0%, 100% {
+      transform: scale(1);
+    }    
+    50% {
+      transform: scale(1.1);
+    }
+}
+  
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    #top-text {
+        gap: 2%;
+        width: 100%;
+    }
+
+    .info-tour {
+        margin: 0 auto;
+        width: 350px;
+        height: 200px;
+    }
+
+    .top-route {
+        display: row;
+        flex-direction: column;
+        justify-content: left;
+        gap: 50px;
+    }
+
+    .itinerary {
+        margin-top: 13%;
+    }
+
+    .day-button {
+        width: 30%;
+    }
+    .day-button:hover {
+        width: 30%;
+    }
+  
+    .day-schedule {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+}
+  
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .day-button {
+      width: 30%;
+    }
+  
+    .day-schedule {
+      width: 70%;
+    }
+}
+  
+/* Desktops and Larger Screens */
+@media (min-width: 1024px) {
+    .day-button {
+      width: 9vw;
+    }
+  
+    .day-schedule {
+      width: 40%;
+    }
+}

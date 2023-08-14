@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-    background-color: rgb(249, 238, 232);
+    background-color: #f9eee8;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -12,10 +12,51 @@ a {
     text-decoration: none;
 }
 
+#Welcome-message {
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+#edd {
+    font-size: 5.2em;
+    color: #f9eee8;
+    text-shadow: 1px 1px 2px #00000080;
+}
+
+#site-description {
+    font-size: 1.6em;
+    color: #f9eee8;
+    text-shadow: 1px 1px 10px #00000080;
+}
+
+#start-bt {
+    background-color: #f9eee8;
+    color: #c1847f;
+    border-radius: 20px;
+    color: #c1847f;
+    border: none;
+    width: 300px;
+}
+    
+#start-bt:hover {
+    transform: scale(1.001);
+    color: #f9eee8;
+    background-color: #5d5d5dc9;
+    box-shadow: 0 0 10px #00000080;
+    border: 1px solid black;
+
+} 
+
+#select-country {
+    font-size: 2.6em;
+    text-align: center;
+    color: rgba(141, 62, 40, 0.926);   
+    box-shadow: 0 0 10px #00000080;
+}
+
 .pics {
     display: flex;
     flex-direction: row;
-    gap: 20vh;
+    gap: 150px;
     justify-content: center; 
 }
 
@@ -23,6 +64,7 @@ a {
     width: 30vw;
     height: 40vh;
     border-radius: 25px;
+    box-shadow: 0 12px 12px -10px #00000080;
     transition: transform 0.3s; 
 }
 
@@ -30,119 +72,75 @@ a {
     transform: scale(1.05); 
 }
 
-.country_name {
+.country-name {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 66vh;
-    color: rgb(193, 132, 127);
+    justify-content: center; 
+    color: #c1847f;
     font-size: 2.4em;
-
+    margin: 0 auto; 
 }
 
-#edd {
-    font-size: 5.2em;
-    color: rgb(249, 238, 232);
-}
-#site-description {
-    font-size: 1.6em;
-    color: rgb(249, 238, 232);
-}
-#start-bt {
-    border-radius: 20px;
-    color: rgb(249, 238, 232);
-    background-color: rgba(155, 151, 149, 0.771);
-    border: none;
-}
-    
-#start-bt:hover {
-    transform: scale(1.001); 
-    background-color: rgb(249, 238, 232);
-    color: rgb(193, 132, 127);
-
-}    
-
-
-#select-country {
-    font-size: 2.6em;
-    text-align: center;
-    color:  rgb(193, 132, 127);
-    color: rgba(141, 62, 40, 0.926);
-
+.country-name h2 {
+    margin: 0; 
+    padding: 0 20px; 
 }
 
-/* Media Queries for Responsive Design */
+.country-name #dubai-name {
+    padding-right: 200px; 
+}
 
-/* Mobile Devices */
+.country-name #venice-name {
+    padding-left: 250px; 
+}
+
+@media (min-width: 768px) {
+    .name-phone-only{
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
+    #edd {font-size: 1.5em;}
+    
+    #site-description {font-size: 1.6em;}
+
+    #Welcome-message { font-size: 1.1em; }
+
+    #site-description { margin-top: 0px; font-size: 1.01em; margin-bottom: 0px;}
+
+    #start-bt { width: auto; border-radius: 10px; margin-top: 5px;}
+
+    #start-bt h1{ font-size: 1.1em; }
+
+    #select-country{ font-size: 1.9em; }
+
     .pics {
+        display: flex;
         flex-direction: column;
-        gap: 5vh;
+        gap: 45px;
+        align-items: center;
     }
 
     .pic {
-        width: 80vw;
-        height: 40vh;
+        width: 380px;
+        height: 250px;
+        border-radius: 25px;
+        box-shadow: 0 12px 12px -10px #00000080;
+        transition: transform 0.3s; 
     }
 
-    .country_name {
-        flex-direction: column;
-        gap: 2vh;
-        font-size: 2em;
-    }
+    .country-name #dubai-name { padding-right: 50px; }
+    
+    .country-name #venice-name { padding-left: 80px; }
 
-    #edd {
-        font-size: 3em;
-    }
+    .country-name{ display: none; }
 
-    #site-description {
-        font-size: 1.2em;
-    }
+    .name-phone-only {
+        color: #c1847f;
+        padding: 0 auto;
+        margin: 0;
 
-    #start-bt {
-        font-size: 1.2em;
+        text-align: center;
+        font-size: 2.5em;
     }
-
-    #select-country {
-        font-size: 1.8em;
-    }
-}
-
-/* Tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .pics {
-        gap: 10vh;
-    }
-
-    .pic {
-        width: 45vw;
-        height: 30vh;
-    }
-
-    .country_name {
-        gap: 10vh;
-        font-size: 2.2em;
-    }
-
-    #edd {
-        font-size: 4.5em;
-    }
-
-    #site-description {
-        font-size: 1.4em;
-    }
-
-    #start-bt {
-        font-size: 1.5em;
-    }
-
-    #select-country {
-        font-size: 2.2em;
-    }
-}
-
-/* Desktops and Larger Screens */
-@media (min-width: 1024px) {
-    /* Your default styles for desktops go here (already provided in the original CSS) */
 }
