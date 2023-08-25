@@ -196,6 +196,9 @@ a {
 .icon {
     width: 40.96px;
     height: 40.96px;
+    transition: background-color 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .icon:hover {
@@ -226,10 +229,11 @@ a {
 #writer {
     color: #f9eee8;
     gap: 12px;
+    transition: color 0.5s ease-in-out;
+
 }
 #writer:hover {
-    color: white;
-    text-decoration: underline;
+    color: black;
 }
 
 .github-message {
